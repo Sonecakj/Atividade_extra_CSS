@@ -1,0 +1,70 @@
+body{
+    background-color:#eef2f7;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*--- Estilo do cartão (Mobile) ---*/
+
+.cartao {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+
+    /*--- Flexbox Mobile ---*/
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.nome {
+    margin:0;
+    font-size: 1.8em;
+    color:#2c3e50
+}
+
+.cargo {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color:#3498db;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: 1em;
+    color:#555;
+}
+
+/*--- Media Query para Telas Maiores ---*/
+
+/*--- Esse bloco de código SÓ será aplicado se a largura da tela for de 600px ou mais ---*/
+
+@media (min-width:600px) {
+    .cartao {
+        flex-direction: row;
+        max-width: 700;
+        text-align: left;
+        align-items: center;
+    }
+
+    .foto-perfil {
+        margin-bottom: 0;
+        margin-right: 25px;
+    }
+}
